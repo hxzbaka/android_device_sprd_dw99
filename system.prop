@@ -1,0 +1,3 @@
+dalvik.vm.stack-trace-dir=/data/anr
+ro.expect.recovery_id=0x2a97e5511f498ea0d2607b8f569820d6881e170c000000000000000000000000
+ro.frp.pst=/dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/persist

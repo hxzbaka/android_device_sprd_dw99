@@ -1,0 +1,80 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "zram.sh",
+    src: "bin/zram.sh",
+    vendor: true,
+}
+
+// Init configuration files
+// fstab
+prebuilt_etc {
+    name: "fstab.sl8541e_1h10",
+    src: "etc/fstab.sl8541e_1h10",
+    vendor: true,
+}
+
+// SPRD
+// keylayout
+prebuilt_etc {
+    name: "gpio-keys.kl",
+    src: "etc/keylayout_dir/gpio-keys.kl",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "msg2138_ts.kl",
+    src: "etc/keylayout_dir/msg2138_ts.kl",
+    vendor: true,
+}
+
+// init_hw
+prebuilt_etc {
+    name: "init.sl8541e_1h10.rc",
+    src: "etc/initrc_dir/init.sl8541e_1h10.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+prebuilt_etc {
+    name: "init.sl8541e_1h10.usb.rc",
+    src: "etc/initrc_dir/init.sl8541e_1h10.usb.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+
+prebuilt_etc {
+    name: "init.common.rc",
+    src: "etc/initrc_dir/init.common.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+
+// prebuilt_etc {
+//     name: "init.common.rc",
+//     src: "etc/initrc_dir/init.common_8.1.rc",
+//     vendor: true,
+//     sub_dir: "init/hw",
+// }
+
+prebuilt_etc {
+    name: "init.recovery.cali.rc",
+    src: "etc/initrc_dir/init.recovery.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+prebuilt_etc {
+    name: "init.ram.rc",
+    src: "etc/initrc_dir/init.ram.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+prebuilt_etc {
+    name: "init.storage.rc",
+    src: "etc/initrc_dir/init.storage.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}

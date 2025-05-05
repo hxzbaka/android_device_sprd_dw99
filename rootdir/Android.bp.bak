@@ -1,0 +1,170 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "zram.sh",
+    src: "bin/zram.sh",
+    vendor: true,
+}
+
+// Init configuration files
+// fstab
+prebuilt_etc {
+    name: "fstab.sl8541e_1h10",
+    src: "etc/fstab.sl8541e_1h10",
+    vendor: true,
+}
+
+//SPRD
+//audio
+prebuilt_etc {
+    name: "a2dp_audio_policy_configuration.xml",
+    src: "etc/audio_dir/a2dp_audio_policy_configuration.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "audio_hw.xml",
+    src: "etc/audio_dir/audio_hw.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "audio_para",
+    src: "etc/audio_dir/audio_para",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "audio_policy_configuration.xml",
+    src: "etc/audio_dir/audio_policy_configuration.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "audio_policy_volumes.xml",
+    src: "etc/audio_dir/audio_policy_volumes.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "primary_audio_policy_configuration.xml",
+    src: "etc/audio_dir/primary_audio_policy_configuration.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "r_submix_audio_policy_configuration.xml",
+    src: "etc/audio_dir/r_submix_audio_policy_configuration.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "usb_audio_policy_configuration.xml",
+    src: "etc/audio_dir/usb_audio_policy_configuration.xml",
+    vendor: true,
+}
+
+//wifi
+prebuilt_etc {
+    name: "wpa_supplicant.conf",
+    src: "etc/wifi_dir/wpa_supplicant.conf",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "wpa_supplicant_overlay.conf",
+    src: "etc/wifi_dir/wpa_supplicant_overlay.conf",
+    vendor: true,
+}
+//keylayout
+prebuilt_etc {
+    name: "gpio-keys.kl",
+    src: "etc/keylayout_dir/gpio-keys.kl",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "msg2138_ts.kl",
+    src: "etc/keylayout_dir/msg2138_ts.kl",
+    vendor: true,
+}
+
+//media
+prebuilt_etc {
+    name: "media_codecs.xml",
+    src: "etc/media_dir/media_codecs.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "media_codecs_google_audio.xml",
+    src: "etc/media_dir/media_codecs_google_audio.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "media_codecs_google_telephony.xml",
+    src: "etc/media_dir/media_codecs_google_telephony.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "media_codecs_google_video.xml",
+    src: "etc/media_dir/media_codecs_google_video.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "media_codecs_performance.xml",
+    src: "etc/media_dir/media_codecs_performance.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "media_profiles_V1_0.xml",
+    src: "etc/media_dir/media_profiles_V1_0.xml",
+    vendor: true,
+}
+prebuilt_etc {
+    name: "media_profiles_turnkey.xml",
+    src: "etc/media_dir/media_profiles_turnkey.xml",
+    vendor: true,
+}
+
+// init_hw
+prebuilt_etc {
+    name: "init.sl8541e_1h10.rc",
+    src: "etc/initrc_dir/init.sl8541e_1h10.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+prebuilt_etc {
+    name: "init.sl8541e_1h10.usb.rc",
+    src: "etc/initrc_dir/init.sl8541e_1h10.usb.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+
+prebuilt_etc {
+    name: "init.common.rc",
+    src: "etc/initrc_dir/init.common.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+
+// prebuilt_etc {
+//     name: "init.common.rc",
+//     src: "etc/initrc_dir/init.common_8.1.rc",
+//     vendor: true,
+//     sub_dir: "init/hw",
+// }
+
+prebuilt_etc {
+    name: "init.recovery.cali.rc",
+    src: "etc/initrc_dir/init.recovery.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+prebuilt_etc {
+    name: "init.ram.rc",
+    src: "etc/initrc_dir/init.ram.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+prebuilt_etc {
+    name: "init.storage.rc",
+    src: "etc/initrc_dir/init.storage.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
